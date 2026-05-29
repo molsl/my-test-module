@@ -15,6 +15,11 @@ export default createConfigForNuxt({
     ],
   },
 })
+  .override('nuxt/typescript', {
+    rules: {
+      'vue/multi-word-component-names': 'off'
+    }
+  })
   .append(
     // your custom flat config here...
   )
